@@ -126,7 +126,7 @@ Object.defineProperty(exports, "__esModule", {
 exports.default = Header;
 
 function Header() {
-  return "\n    <h1 class='bg-white rounded nav-logo'>MessageMaker</h1>\n    <nav class=\"nav\">\n        <ul class='navbar navbar-expand-lg navbar-light bg-light  nav-list'>\n            <li class='nav-link nav-list__home'>Home</li>\n            <li class='nav-link nav-list__messages'>Messages</li>\n            <li class='nav-link nav-list__signup'>Sign Up</li>\n            <li class='nav-link nav-list__login'>Login</li>\n            <li class='nav-link nav-list__logout'>Logout</li>\n        </ul>\n     </nav>\n";
+  return "\n    <h1 class='bg-white rounded nav-logo'>MessageMaker</h1>\n    <nav class=\"nav\">\n        <ul class='navbar navbar-expand-lg navbar-light bg-light  nav-list'>\n            <li class='nav-link nav-list__home'>Home</li>\n            <li class='nav-link nav-list__messages'>Messages</li>\n            <li class='nav-link nav-list__signup'>Sign Up</li>\n            <li class='nav-link nav-list__login'>Login</li>\n            <li class='nav-link nav-list__logout'>Logout</li>\n        </ul>\n     </nav>\n     <h1>test</h1>\n";
 }
 },{}],"js/components/Home.js":[function(require,module,exports) {
 "use strict";

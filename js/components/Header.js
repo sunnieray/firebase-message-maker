@@ -10,5 +10,6 @@ export default function Header() {
             <li class='nav-link nav-list__logout'>Logout</li>
         </ul>
      </nav>
+     <h1>test</h1>
 `;
 }
