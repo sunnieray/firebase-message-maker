@@ -6,7 +6,8 @@ export default function Header() {
             <li class='nav-link nav-list__home'>Home</li>
             <li class='nav-link nav-list__messages'>Messages</li>
             <li class='nav-link nav-list__signup'>Sign Up</li>
-            <li class='nav-link nav-list__login' data-toggle="modal" data-target="#modalRegisterForm">Login</li>
+            <li class='nav-link nav-list__login' data-toggle="modal" data-target="#modalLoginForm">Login</li>
+
             <li class='nav-link nav-list__logout'>Logout</li>
         </ul>
      </nav>

@@ -16,11 +16,13 @@ export default function Login() {
               <input type="email" id="defaultForm-email" class="form-control validate">
               <label data-error="wrong" data-success="right" for="defaultForm-email">Your email</label>
             </div>
+    
             <div class="md-form mb-4">
               <i class="fas fa-lock prefix grey-text"></i>
               <input type="password" id="defaultForm-pass" class="form-control validate">
               <label data-error="wrong" data-success="right" for="defaultForm-pass">Your password</label>
             </div>
+    
           </div>
           <div class="modal-footer d-flex justify-content-center">
             <button class="btn btn-default login-submit" data-dismiss="modal">Login</button>
@@ -28,5 +30,6 @@ export default function Login() {
         </div>
       </div>
     </div>
+    
       `;
 }
