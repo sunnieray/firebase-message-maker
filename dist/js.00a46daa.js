@@ -126,8 +126,10 @@ Object.defineProperty(exports, "__esModule", {
 exports.default = Header;
 
 function Header() {
-  return "\n    <h1 class='bg-white rounded nav-logo'>MessageMaker</h1>\n    <nav class=\"nav\">\n        <ul class='navbar navbar-expand-lg navbar-light bg-light  nav-list'>\n            <li class='nav-link nav-list__home'>Home</li>\n            <li class='nav-link nav-list__messages'>Messages</li>\n            <li class='nav-link nav-list__signup'>Sign Up</li>\n            <li class='nav-link nav-list__login'>Login</li>\n            <li class='nav-link nav-list__logout'>Logout</li>\n        </ul>\n     </nav>\n";
+  return "\n    <h1 class='bg-white rounded nav-logo'>MessageMaker</h1>\n    <nav class=\"nav\">\n        <ul class='navbar navbar-expand-lg navbar-light bg-light  nav-list'>\n            <li class='nav-link nav-list__home'>Home</li>\n            <li class='nav-link nav-list__messages'>Messages</li>\n            <li class='nav-link nav-list__signup'>Sign Up</li>\n            <li class='nav-link nav-list__login' data-toggle=\"modal\" data-target=\"#modalRegisterForm\">Login</li>\n            <li class='nav-link nav-list__logout'>Logout</li>\n        </ul>\n     </nav>\n";
 }
+},{}],"assest/message.jpeg":[function(require,module,exports) {
+module.exports = "/message.b839a0a5.jpeg";
 },{}],"js/components/Home.js":[function(require,module,exports) {
 "use strict";
 
@@ -136,10 +138,14 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.default = Home;
 
+var _message = _interopRequireDefault(require("../../assest/message.jpeg"));
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
 function Home() {
-  return "\n  <figure class=\"figure\">\n  <img src=\"https://images.unsplash.com/photo-1530811761207-8d9d22f0a141?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1400&q=60\" class=\"figure-img img-fluid rounded\" alt=\"A generic square placeholder image with rounded corners in a figure.\">\n  <figcaption class=\"figure-caption text-right\">A caption for the above image.</figcaption>\n</figure>\n";
+  return "\n  <figure class=\"figure\">\n  <img src=\"".concat(_message.default, "\" class=\"figure-img img-fluid rounded\" alt=\"A generic square placeholder image with rounded corners in a figure.\">\n  <figcaption class=\"figure-caption text-right\">A caption for the above image.</figcaption>\n</figure>\n");
 }
-},{}],"js/components/Login.js":[function(require,module,exports) {
+},{"../../assest/message.jpeg":"assest/message.jpeg"}],"js/components/Login.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -148,7 +154,7 @@ Object.defineProperty(exports, "__esModule", {
 exports.default = Login;
 
 function Login() {
-  return "\n  <div class=\"modal fade\" id=\"modalRegisterForm\" tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"myModalLabel\"\n  aria-hidden=\"true\">\n  <div class=\"modal-dialog\" role=\"document\">\n    <div class=\"modal-content\">\n      <div class=\"modal-header text-center\">\n        <h4 class=\"modal-title w-100 font-weight-bold\">Sign up</h4>\n        <button type=\"button\" class=\"close\" data-dismiss=\"modal\" aria-label=\"Close\">\n          <span aria-hidden=\"true\">&times;</span>\n        </button>\n      </div>\n      <div class=\"modal-body mx-3\">\n        <div class=\"md-form mb-5\">\n          <i class=\"fas fa-user prefix grey-text\"></i>\n          <input type=\"text\" id=\"orangeForm-name\" class=\"form-control validate\">\n          <label data-error=\"wrong\" data-success=\"right\" for=\"orangeForm-name\">Your name</label>\n        </div>\n        <div class=\"md-form mb-5\">\n          <i class=\"fas fa-envelope prefix grey-text\"></i>\n          <input type=\"email\" id=\"orangeForm-email\" class=\"form-control validate\">\n          <label data-error=\"wrong\" data-success=\"right\" for=\"orangeForm-email\">Your email</label>\n        </div>\n\n        <div class=\"md-form mb-4\">\n          <i class=\"fas fa-lock prefix grey-text\"></i>\n          <input type=\"password\" id=\"orangeForm-pass\" class=\"form-control validate\">\n          <label data-error=\"wrong\" data-success=\"right\" for=\"orangeForm-pass\">Your password</label>\n        </div>\n\n      </div>\n      <div class=\"modal-footer d-flex justify-content-center\">\n        <button class=\"btn btn-deep-orange\">Sign up</button>\n      </div>\n    </div>\n  </div>\n</div>\n\n<div class=\"text-center\">\n  <a href=\"\" class=\"btn btn-default btn-rounded mb-4\" data-toggle=\"modal\" data-target=\"#modalRegisterForm\">Launch\n    Modal Register Form</a>\n</div>\n";
+  return "\n      <div class=\"modal fade\" id=\"modalLoginForm\" tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"myModalLabel\"\n      aria-hidden=\"true\">\n      <div class=\"modal-dialog\" role=\"document\">\n        <div class=\"modal-content\">\n          <div class=\"modal-header text-center\">\n            <h4 class=\"modal-title w-100 font-weight-bold\">Sign in</h4>\n            <button type=\"button\" class=\"close\" data-dismiss=\"modal\" aria-label=\"Close\">\n              <span aria-hidden=\"true\">&times;</span>\n            </button>\n          </div>\n          <div class=\"modal-body mx-3\">\n            <div class=\"md-form mb-5\">\n              <i class=\"fas fa-envelope prefix grey-text\"></i>\n              <input type=\"email\" id=\"defaultForm-email\" class=\"form-control validate\">\n              <label data-error=\"wrong\" data-success=\"right\" for=\"defaultForm-email\">Your email</label>\n            </div>\n            <div class=\"md-form mb-4\">\n              <i class=\"fas fa-lock prefix grey-text\"></i>\n              <input type=\"password\" id=\"defaultForm-pass\" class=\"form-control validate\">\n              <label data-error=\"wrong\" data-success=\"right\" for=\"defaultForm-pass\">Your password</label>\n            </div>\n          </div>\n          <div class=\"modal-footer d-flex justify-content-center\">\n            <button class=\"btn btn-default login-submit\" data-dismiss=\"modal\">Login</button>\n          </div>\n        </div>\n      </div>\n    </div>\n      ";
 }
 },{}],"js/components/Messages.js":[function(require,module,exports) {
 "use strict";
@@ -62953,17 +62959,17 @@ require("firebase/storage");
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var firebaseConfig = {
-  apiKey: "AIzaSyDSczUVKDwzIABl2aexOH75_LoWVI8A91M",
-  authDomain: "message-maker-a7160.firebaseapp.com",
-  databaseURL: "https://message-maker-a7160.firebaseio.com",
-  projectId: "message-maker-a7160",
-  storageBucket: "message-maker-a7160.appspot.com",
-  messagingSenderId: "420883896451",
-  appId: "1:420883896451:web:1e1f1d4cb749ee44dae3b6",
-  measurementId: "G-D3WMDX9ZST"
+  apiKey: 'AIzaSyDSczUVKDwzIABl2aexOH75_LoWVI8A91M',
+  authDomain: 'message-maker-a7160.firebaseapp.com',
+  databaseURL: 'https://message-maker-a7160.firebaseio.com',
+  projectId: 'message-maker-a7160',
+  storageBucket: 'message-maker-a7160.appspot.com',
+  messagingSenderId: '420883896451',
+  appId: '1:420883896451:web:1e1f1d4cb749ee44dae3b6',
+  measurementId: 'G-D3WMDX9ZST'
 };
 
-_app.default.initalizeApp(firebaseConfig);
+_app.default.initializeApp(firebaseConfig);
 
 _app.default.firestore();
 
@@ -80763,6 +80769,18 @@ function renderMessages() {
     db.collection('messages').get().then(function (messages) {
       main.innerHTML = (0, _Messages.default)(messages);
     });
+    main.addEventListener('click', function () {
+      if (event.target.classList.contains('login-submit')) {
+        var email = document.querySelector('#defaultForm-email').value;
+        var password = document.querySelector('#defaultForm-pass').value;
+
+        var auth = _firebase.default.auth();
+
+        auth.signInWithEmailAndPassword(email, password).then(function (user) {
+          console.log(user);
+        });
+      }
+    });
   });
 }
 },{"./components/Header":"js/components/Header.js","./components/Home":"js/components/Home.js","./components/Login":"js/components/Login.js","./components/Messages":"js/components/Messages.js","./config/firebase":"js/config/firebase.js","bootstrap":"node_modules/bootstrap/dist/js/bootstrap.js","bootstrap/dist/css/bootstrap.css":"node_modules/bootstrap/dist/css/bootstrap.css","@fortawesome/fontawesome-free/css/all.css":"node_modules/@fortawesome/fontawesome-free/css/all.css"}],"node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
@@ -80793,7 +80811,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "60586" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "63447" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

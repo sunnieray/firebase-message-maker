@@ -47,6 +47,16 @@ function renderMessages() {
 			.then(messages => {
 				main.innerHTML = Messages(messages);
 			});
-	
+		main.addEventListener('click', () => {
+			if (event.target.classList.contains('login-submit')) {
+				const email = document.querySelector('#defaultForm-email').value;
+				const password = document.querySelector('#defaultForm-pass').value;
+
+				const auth = firebase.auth();
+				auth.signInWithEmailAndPassword(email, password).then(user => {
+					console.log(user);
+				});
+			}
+		});
 	});
 }
