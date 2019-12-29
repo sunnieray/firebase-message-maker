@@ -1,4 +1,4 @@
-import notebookImg from '../../assets/notebook.jpg';
+import notebookImg from '../../assets/message.jpeg';
 
 export default function Home() {
 	return `
