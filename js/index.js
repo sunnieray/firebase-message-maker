@@ -1,5 +1,8 @@
-import Header from './components/Header';
-import Home from './components/Home';
+import auth from './auth/auth';
+import header from './features/header';
+import home from './features/home';
+import messages from './features/messages';
+import uploadImage from './features/uploadImage';
 import 'bootstrap';
 import 'bootstrap/dist/css/bootstrap.css';
 import '@fortawesome/fontawesome-free/css/all.css';
@@ -7,18 +10,12 @@ import '@fortawesome/fontawesome-free/css/all.css';
 pageBuild();
 
 function pageBuild() {
-	renderHeader();
+	header.header();
+	home.home();
+	auth.login();
+	auth.logout();
+	auth.signup();
+	messages.messages();
+	uploadImage.uploadImage();
 }
 
-function renderHeader() {
-	const header = document.querySelector('.header');
-	header.innerHTML = Header();
-}
-
-function renderHome() {
-	const home = document.querySelector('.nav-list__home');
-	home.addEventListener('click', () => {
-		const main = document.querySelector('.main');
-		main.innerHTML = Home();
-	});
-}
