@@ -1,5 +1,5 @@
 import Login from '../components/Login';
-import Logout from '../components/Logout';
+import Logout from '../components/Logout.js';
 import Signup from '../components/Signup';
 import firebase from '../config/firebase';
 import context from '../context/context';
